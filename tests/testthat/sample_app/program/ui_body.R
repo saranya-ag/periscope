@@ -47,7 +47,7 @@ body3 <- shinydashboard::box( id     = "bodyElement3",
               collapsible = TRUE,
               collapsed   = TRUE,
               downloadableTableUI("exampleDT1",
-                                  list("csv", "tsv", "xlsx"),
+                                  list("csv", "tsv"),
                                   "Download table data") )
 
 body4 <- shinydashboard::box( id = "bodyElement4",
