@@ -134,7 +134,7 @@ test_that("create_new_application custom style right sidebar", {
     
     expect_message(create_new_application(name = appTemp.name, location = appTemp.dir, sampleapp = FALSE, rightsidebar = TRUE, style = list(skin = "green")), 
                    "Framework creation was successful.")
-    expect_cleanup_create_new_application(appTemp, skin = "green")
+    expect_cleanup_create_new_application(appTemp, dashboard_plus = TRUE, skin = "green")
 })
 
 test_that("create_new_application invalid style", {
