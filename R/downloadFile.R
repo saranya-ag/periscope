@@ -209,7 +209,7 @@ downloadFile <- function(input, output, session, logger,
         }
         # excel file
         else if (type == "xlsx") {
-            if ("openxlsx2" %in% utils::installed.packages()) {
+            if ("openxlsx" %in% utils::installed.packages()) {
                 if ((class(data) == "Workbook") && ("openxlsx" %in% attributes(class(data)))) {
                     openxlsx::saveWorkbook(data, file)
                 }
