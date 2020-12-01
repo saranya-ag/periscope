@@ -10,9 +10,6 @@
 ## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 ## General Public License for more details.
 ##
-## You should have received a copy of the GNU General Public License
-## along with the nens libraray.  If not, see http://www.gnu.org/licenses/.
-##
 ## Copyright (c) 2009..2013 by Mario Frasca
 ##
 
@@ -235,6 +232,7 @@ Logger <- setRefClass(
 #' @param logger the name of the logger to which we pass the record
 #'
 #' @name logging-entrypoints
+#' @importFrom methods new
 #'
 NULL
 
