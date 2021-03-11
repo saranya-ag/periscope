@@ -24,7 +24,6 @@
 # -- Create Elements
 
 if (utils::packageVersion('shinydashboardPlus') < 2) {
-    
     tab1 <- rightSidebarTabContent(
         id = 1,
         icon = "desktop",
@@ -44,9 +43,7 @@ if (utils::packageVersion('shinydashboardPlus') < 2) {
         icon = "paint-brush")
 
     plus_fxn <- list(tab1, tab2, tab3)
-    
 } else {
-    
     tab1 <- controlbarItem(
         id = 1,
         title = icon("desktop"),
