@@ -208,7 +208,7 @@ create_new_application <- function(name, location, sampleapp = FALSE, resetbutto
     if (leftsidebar) {
         if (!resetbutton) {
             ui_file <- file(paste(newloc, "ui.R", sep = usersep), open = "r+")
-            writeLines(gsub("fw_create_sidebar\\(", "fw_create_sidebar\\(resetbutton = FALSE", 
+            writeLines(gsub("fw_create_sidebar\\(", "fw_create_sidebar\\(resetbutton = FALSE, ", 
                             readLines(con = ui_file)), 
                        con = ui_file)
             close(ui_file)
