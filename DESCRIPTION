@@ -1,7 +1,7 @@
 Package: periscope
 Type: Package
 Title: Enterprise Streamlined 'Shiny' Application Framework
-Version: 0.6.0.9001
+Version: 0.6.0.9008
 Authors@R: c(
     person("Constance", "Brett", email="connie@aggregate-genius.com", role = c("aut", "cre")),
     person("Isaac", "Neuhaus", role = "aut", comment = "canvasXpress JavaScript Library Maintainer"),
@@ -14,17 +14,15 @@ Description: An enterprise-targeted scalable and UI-standardized 'shiny' framewo
     consistent user experience regardless of application or developer.
 URL: https://github.com/cb4ds/periscope, http://periscopeapps.org:3838, https://www.canvasxpress.org
 BugReports: https://github.com/cb4ds/periscope/issues
-Repository: BRAN
 License: GPL-3
 Encoding: UTF-8
 Language: en-US
 LazyData: true
 Depends:
-    R (>= 3.4)
+    R (>= 3.5)
 Imports:
     shiny (>= 1.1),
     shinydashboard (>= 0.5),
-    shinydashboardPlus,
     shinyBS (>= 0.61),
     lubridate (>= 1.6),
     DT (>= 0.2),
@@ -37,5 +35,6 @@ Suggests:
     knitr,
     rmarkdown,
     testthat,
+    shinydashboardPlus,
     openxlsx (>= 3.0)
 VignetteBuilder: knitr
