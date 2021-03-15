@@ -1,5 +1,7 @@
 ## Comments from Maintainer
 
+* 0.6.1 - our host had issues and we needed a few redirect fixes.  Solved!  Apologies.
+
 * Updated the package to handle both the old and new releases of shinydashboardPlus
 * Updated tests, fixed a few minor bugs
 

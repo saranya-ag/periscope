@@ -1,6 +1,6 @@
 #Revisions and Change Log
 
-### v0.6.0
+### v0.6.1
 * Updated to provide handling for shinydashboardPlus old (<= 0.7.5) and new versions (2.X)
 * Removed import less-than requirement designation for shinydashboardPlus
 * Ensured shiny 1.6 compatibility
