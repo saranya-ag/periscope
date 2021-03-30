@@ -44,12 +44,12 @@ NULL
 .g_sdp_oldver    <- FALSE
 
 .onLoad <- function(libname, pkgname) {
-    try({
+    if (length(find.package('shinydashboardPlus', quiet = T)) > 0) {
         if (utils::packageVersion('shinydashboardPlus') < 2) {
             .g_sdp_oldver <<- TRUE
         }
         .g_sdp_installed <<- TRUE
-    })
+    }
 }
 
 .onAttach <- function(libname, pkgname) {
