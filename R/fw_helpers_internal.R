@@ -61,7 +61,7 @@
 
 .right_sidebar_injection <- function() {
     value <- NULL
-    if (.g_sdp_oldver) {
+    if (utils::packageVersion('shinydashboardPlus') < 2) {
         shiny::tags$script(shiny::HTML("setTimeout(function() {
                                             $('[class~=\"control-sidebar-tabs\"]').find('li:first').remove();
                                        }, 5000);"))

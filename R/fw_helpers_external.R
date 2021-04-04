@@ -55,7 +55,7 @@ fw_create_header_plus <- function(sidebar_right_icon = shiny::isolate(.g_opts$si
         stop('shinydashboardPlus is not installed')
     }
     
-    if (.g_sdp_oldver) {
+    if (utils::packageVersion('shinydashboardPlus') < 2) {
         plus_fxn <- getExportedValue("shinydashboardPlus", "dashboardHeaderPlus")
         arg_list <- list(enable_rightsidebar = TRUE, 
                          rightSidebarIcon = sidebar_right_icon)
@@ -134,7 +134,7 @@ fw_create_right_sidebar <- function() {
         params <- c(params, side_right)
     }
     
-    if (.g_sdp_oldver) {
+    if (utils::packageVersion('shinydashboardPlus') < 2) {
         plus_fxn <- getExportedValue("shinydashboardPlus", "rightSidebar")
     } else {
         plus_fxn <- getExportedValue("shinydashboardPlus", "dashboardControlbar")
